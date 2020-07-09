@@ -112,7 +112,9 @@ def inner_four(input_list):
 
     """
 
-    return []
+    return input_list[2:6]
+
+print(inner_four([0, 3, 6, 9, 12, 15, 18, 21, 24, 27]))
 
 
 def inner_four_end(input_list):
@@ -128,7 +130,9 @@ def inner_four_end(input_list):
 
     """
 
-    return []
+    return input_list[4:8]
+
+print(inner_four_end([0, 3, 6, 9, 12, 15, 18, 21, 24, 27]))
 
 
 def replace_head(input_list):
