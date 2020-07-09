@@ -67,8 +67,9 @@ def first_three(input_list):
     ['Jan', 'Feb', 'Mar']
 
     """
+    return input_list[0:3]
 
-    return []
+print(first_three(['Jan', 'Feb', 'Mar', 'Apr', 'May']))
 
 
 def last_five(input_list):
