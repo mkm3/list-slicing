@@ -39,8 +39,9 @@ def last(input_list):
 
     """
 
-    return []
+    return input_list[-1]
 
+print(last(['Jan', 'Feb', 'Mar']))
 
 def top(input_list):
     """Return all elements of the input list except the last.
@@ -52,7 +53,9 @@ def top(input_list):
 
     """
 
-    return []
+    return input_list[0:-1]
+
+print(top(['Jan', 'Feb', 'Mar']))
 
 
 def first_three(input_list):
