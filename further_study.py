@@ -70,7 +70,7 @@ def custom_extend(input_list, second_list):
         True
 
     """
-    return input_list.extend(second_list)
+    input_list.extend(second_list)
 
 months = ['Jan', 'Feb', 'Mar']
 print(custom_extend(months, ['Apr', 'May']))
@@ -90,8 +90,14 @@ def custom_insert(input_list, index, value):
         True
 
     """
+    # input_list = insert(idx, )
 
-    pass
+    input_list.insert(index, value)
+
+
+
+months = ['Jan', 'Mar']
+print(custom_insert(months, 1, 'Feb'))
 
 
 def custom_remove(input_list, value):
