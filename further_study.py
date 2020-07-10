@@ -1,6 +1,9 @@
 """Custom implementations of several standard Python list methods."""
 
 from list_operations import *
+print()
+print()
+print()
 
 
 def custom_len(input_list):
@@ -16,7 +19,10 @@ def custom_len(input_list):
 
     """
 
-    return 0
+
+    return len(input_list)
+
+print(custom_len(['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']))
 
 
 # For the next four exercises, you'll need to be clever and think about ways
@@ -43,8 +49,10 @@ def custom_append(input_list, value):
         True
 
     """
+    input_list.append(value)
 
-    pass
+notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
+print(custom_append(notes, 'Re'))
 
 
 def custom_extend(input_list, second_list):
@@ -62,8 +70,10 @@ def custom_extend(input_list, second_list):
         True
 
     """
+    return input_list.extend(second_list)
 
-    pass
+months = ['Jan', 'Feb', 'Mar']
+print(custom_extend(months, ['Apr', 'May']))
 
 
 def custom_insert(input_list, index, value):
